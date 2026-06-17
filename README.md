@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,6&height=130&section=header"/>
 
-# 🖥️ Device Hardening Guide
+# Device Hardening Guide
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2500&pause=1000&color=00B894&center=true&vCenter=true&width=750&lines=VPN+%2B+Kill+Switch+%2B+WireGuard;DNS-over-HTTPS+%2B+DNSCrypt+%2B+Tor;Browser+Hardening+%2B+Anti-Fingerprinting;Full+Disk+Encryption+%2B+Secure+Boot;Underground+Linux+Distros+%2B+Anonymity+OS;Hardware+Privacy+%2B+Firmware+Security;Tor+%2B+I2P+%2B+Freenet+%2B+Overlay+Networks)](https://github.com/woodbloom/Device-hardening-guide)
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Operating Systems — Full Comparison](#-operating-systems--full-comparison)
 - [Underground & Privacy Linux Distros](#-underground--privacy-linux-distros)
@@ -44,7 +44,7 @@
 
 ---
 
-## 🖥️ Operating Systems — Full Comparison
+## Operating Systems — Full Comparison
 
 | OS | Privacy | Security | Anonymity | Skill Level | Notes |
 |----|---------|---------|-----------|-------------|-------|
@@ -67,7 +67,7 @@
 
 ---
 
-## 🕵️ Underground & Privacy Linux Distros
+## Underground & Privacy Linux Distros
 
 ### Tails OS — The Gold Standard for Anonymity
 
@@ -314,7 +314,7 @@ https://www.openbsd.org/faq/faq4.html
 
 ---
 
-## 🔒 VPN — Deep Dive
+## VPN — Deep Dive
 
 ### Provider Comparison
 
@@ -392,7 +392,7 @@ curl https://dnsleaktest.com/results.html  # Or use extended test in browser
 
 ---
 
-## 🧅 Tor Network — Full Setup
+## Tor Network — Full Setup
 
 ### Tor Browser
 
@@ -458,7 +458,7 @@ sudo apt install onionshare
 
 ---
 
-## 🌐 I2P — Invisible Internet Project
+## I2P — Invisible Internet Project
 
 I2P is a different anonymity network than Tor — designed for internal services rather than clearnet access.
 
@@ -489,7 +489,7 @@ http://127.0.0.1:7657
 
 ---
 
-## 🌐 DNS — Every Layer
+## DNS — Every Layer
 
 ### DoH, DoT, DNSCrypt Comparison
 
@@ -558,7 +558,7 @@ sudo tcpdump -i any -n port 53
 
 ---
 
-## 🔥 Firewall — Full Configuration
+## Firewall — Full Configuration
 
 ### nftables (Modern Linux Firewall)
 
@@ -640,7 +640,7 @@ Or use [StevenBlack hosts](https://github.com/StevenBlack/hosts) — 100,000+ bl
 
 ---
 
-## 💾 Disk Encryption
+## Disk Encryption
 
 ### LUKS2 — Full Setup
 
@@ -714,7 +714,7 @@ swapon --show
 
 ---
 
-## ⚙️ Firmware & Hardware Security
+## Firmware & Hardware Security
 
 ### BIOS/UEFI Hardening
 
@@ -781,7 +781,7 @@ Look for laptops with hardware kill switches:
 
 ---
 
-## 🌍 Browser Hardening — Complete
+## Browser Hardening — Complete
 
 ### Browser Ranking
 
@@ -906,7 +906,7 @@ https://www.deviceinfo.me          — detailed hardware fingerprinting
 
 ---
 
-## 🧩 Browser Extensions
+## Browser Extensions
 
 **Minimal set — each extension increases your fingerprint surface:**
 
@@ -946,7 +946,7 @@ Dashboard → My filters (custom rules):
 
 ---
 
-## 📧 Email Privacy
+## Email Privacy
 
 ### Providers
 
@@ -1007,7 +1007,7 @@ gpg --keyserver keys.openpgp.org --search their@email.com
 
 ---
 
-## 🔑 Password Management
+## Password Management
 
 ### Tools
 
@@ -1066,7 +1066,7 @@ pass git push
 
 ---
 
-## 🔐 Two-Factor Authentication
+## Two-Factor Authentication
 
 | Method | Phishing Resistant | Interception Resistant | Notes |
 |--------|------------------|----------------------|-------|
@@ -1101,7 +1101,7 @@ pamu2fcfg > ~/.config/Yubico/u2f_keys
 
 ---
 
-## 🗄️ File Encryption
+## File Encryption
 
 ### GPG Symmetric Encryption
 
@@ -1146,7 +1146,7 @@ veracrypt --create /path/to/file --volume-type=hidden
 
 ---
 
-## 🪪 Identity & Profile Separation
+## Identity & Profile Separation
 
 ### Compartmentalization Model
 
@@ -1172,15 +1172,15 @@ firefox -P "Work" --no-remote
 firefox -P "Anonymous" --no-remote  # Always Tor or Mullvad Browser
 
 # Containers in Firefox Multi-Account Containers:
-# 🟠 Personal   — banking, shopping
-# 🔵 Work       — work tools, LinkedIn
-# 🟢 Social     — Discord, Reddit, Twitter
-# 🔴 Dangerous  — sketchy sites (isolated)
+# Personal   — banking, shopping
+# Work       — work tools, LinkedIn
+# Social     — Discord, Reddit, Twitter
+# Dangerous  — sketchy sites (isolated)
 ```
 
 ---
 
-## 🖥️ Virtualization & Sandboxing
+## Virtualization & Sandboxing
 
 ### KVM/QEMU
 
@@ -1235,7 +1235,7 @@ bwrap --ro-bind /usr /usr --ro-bind /lib /lib \
 
 ---
 
-## 🗂️ Metadata Hygiene
+## Metadata Hygiene
 
 ### Images
 
@@ -1290,7 +1290,7 @@ ffprobe -v quiet -print_format json -show_format output.mp4 | grep -i "tag\|meta
 
 ---
 
-## 🗑️ Secure Deletion
+## Secure Deletion
 
 ### shred — Overwrite Before Delete
 
@@ -1323,7 +1323,7 @@ cryptsetup erase /dev/sdX
 
 ---
 
-## 💬 Secure Communication
+## Secure Communication
 
 | Tool | E2EE | Metadata | Phone Nr | Notes |
 |------|------|---------|---------|-------|
@@ -1337,7 +1337,7 @@ cryptsetup erase /dev/sdX
 
 ---
 
-## 🔍 Network Monitoring
+## Network Monitoring
 
 ```bash
 # Real-time connections
@@ -1363,7 +1363,7 @@ vnstat --live
 
 ---
 
-## ✅ System Audit & Hardening
+## System Audit & Hardening
 
 ### Lynis — Full System Audit
 
@@ -1409,7 +1409,7 @@ fail2ban-client status sshd
 
 ---
 
-## ⚙️ Kernel Hardening
+## Kernel Hardening
 
 ```bash
 # /etc/sysctl.d/99-harden.conf
@@ -1464,7 +1464,7 @@ sudo xbps-install linux-hardened
 
 ---
 
-## 🛡️ AppArmor & SELinux
+## AppArmor & SELinux
 
 ### AppArmor (Ubuntu/Debian)
 
@@ -1505,7 +1505,7 @@ sudo ausearch -m avc -ts recent
 
 ---
 
-## ⚠️ Common Failure Points
+## Common Failure Points
 
 | Failure | Fix |
 |---------|-----|
@@ -1526,7 +1526,7 @@ sudo ausearch -m avc -ts recent
 
 ---
 
-## ⚡ Quick Reference
+## Quick Reference
 
 ```
 Anonymity OS  →  Tails (live USB) · Whonix (VM) · Qubes (full system)
